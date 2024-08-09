@@ -1,0 +1,781 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+/* start of hero */
+}
+picture img{
+    max-width: 100%;
+    object-fit: cover;
+
+  
+}
+.card img:hover {
+    transform: scale(1.1);  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+    opacity: 40%;
+    color: black;
+}
+.hide1{
+    display: none;
+}
+
+
+.hero{
+    background-image:url('../images/desktop/image-hero.jpg') ;
+    background-position: center  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+/* start of nav */
+
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding:4rem 8rem ;
+
+}
+
+#check{
+    display: none;
+}
+
+
+nav.navbar ul{
+    color: white;
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    cursor: pointer;
+    
+}
+ ul li{
+    position: relative;
+  cursor: pointer;
+    
+}
+/* nav.navbar ul li:hover:before{
+ content: " ";
+ background-color: aliceblue;
+ position: absolute;
+ color: white;
+ width: 100%;
+ height: 4px;
+animation: slide 2s forwards alternate;
+ top: 120%;
+
+} */
+ ul li:after {
+    content: "";
+    position: absolute;
+    transition: all 1s ease;
+    width: 0%;
+    height: 2px;
+    display: block;
+    
+    
+  }
+  nav ul li:hover{
+    transform: scale(1.4);
+  }
+  a{
+    display: none;
+  }
+
+  nav i{
+color:white;
+font-size: 3rem;
+
+  }
+  input{
+    display: none;
+
+}
+i{
+    display: none;
+}
+
+ ul li:hover::after {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    
+  }
+
+
+input{
+    display: block;
+}
+
+/* end of nav */
+.extracontent{
+    font-family: "Josefin Sans", sans-serif; 
+font-weight: 300;
+color: white;
+border: 2px solid white ;
+padding: 3rem;
+width: 50rem;
+margin: 15rem 8rem;
+
+}
+.extracontent h1{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    padding: 0 2rem;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+
+.hide .xxx{
+    display: none;
+}
+.hero{
+    margin-bottom: 3rem;
+overflow: hidden;
+}
+/* end of hero */
+
+/* glass section */
+
+
+.glass{
+    padding-left: 8rem;
+    display: flex;
+    margin-bottom: 3rem;
+    padding: 1rem;
+ overflow: hidden;
+    max-width: 100%;
+}
+.glass .leftglass{
+ padding-left: 8rem;
+ overflow: hidden;
+}
+.glass .rightglass{
+    align-self:center;
+    background-color: white;
+margin-left: -9.3rem;
+margin-top: 9rem;
+padding: 6.4rem 5rem;
+width: 50%;
+}
+.glass .rightglass h2{
+    font-size: 3em;
+    padding: 1rem 3rem;
+    font-family: "Josefin Sans", sans-serif; 
+    font-weight: 300;
+    width: 80%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: hsl(0, 0%, 41%);
+}
+.glass .rightglass p{
+    color: hsl(0, 0%, 55%);
+    padding: 1rem 3rem;
+    width: 100%;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    color: hsl(0, 0%, 41%);
+    line-height: 1.7;
+}
+
+/* end of glass */
+/* START OF CREATIONS */
+.creations{
+    margin-left: 9rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.top-content{
+    display: flex;
+    justify-content: space-between;
+ 
+    font-family: "Josefin Sans", sans-serif; 
+    font-weight: 300;
+    align-items: center;
+    margin-bottom:5rem ;
+}
+.top-content h2{
+    font-family: "Josefin Sans", sans-serif; 
+    font-weight: 300;
+    font-size: 3rem;
+    color: hsl(0, 0%, 41%);
+}
+.top-content button{
+    margin-right: 5rem;
+    padding: 20px 78px;
+    color: white;
+    border: none;
+    background-color: black;
+    
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.cards{
+display: flex;
+gap: 1.5rem;
+flex-wrap: wrap;
+color: white;
+}   
+.card{
+    position: relative;
+ 
+
+}
+
+.card h3{
+    position: absolute;
+
+    bottom: 1rem;
+    left: 0;
+margin-left: 1rem;
+letter-spacing: 5px;
+width: 60%;
+font-family: "Josefin Sans", sans-serif; 
+font-weight: 300;
+line-height: 1.5;
+z-index: 3;
+margin-left:3rem;
+text-shadow: 2px 2px 4px black; /* Black shadow */
+
+
+}
+
+
+
+
+/* END OF CREATIONS */
+
+
+/* start of footer */
+footer.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 3rem;
+
+}
+
+
+footer.footer   .leftfooter{
+    display: flex;
+    flex-direction: column;
+margin-left: 5rem;
+}
+footer.footer   .leftfooter ul{
+    list-style: none;
+    display: flex;
+    margin-top: 2rem;
+    color: hsl(0, 0%, 41%);
+    gap: 3rem;
+}
+footer.footer   .leftfooter ul li:hover{
+
+    transform: scale(1.4);
+
+    color: white;
+
+}
+footer.footer   .rightfooter{
+    display: flex;
+    flex-direction: column;
+}
+footer.footer   .rightfooter .topfoot{
+    margin-left: 5rem;
+    font-size: 24px;
+}
+footer.footer   .rightfooter .topfoot i{
+    padding-left:20px ;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    color: hsl(0, 0%, 41%);
+}
+footer.footer   .rightfooter .topfoot i:hover{
+    padding-left:20px ;
+    cursor: pointer;
+    margin-bottom: 1rem;
+   color: white;
+   transform: scale(1.4);
+}
+
+footer.footer   .rightfooter .downfoot p{
+    color: hsl(0, 0%, 41%);
+}
+
+/* end of footer */
+/* media 1350 */
+@media(max-width:1700px){
+    body{
+      
+    }
+    .glass .rightglass{
+        align-self:center;
+        background-color: white;
+    margin-left: -9.3rem;
+    margin-top: 9rem;
+    padding: 7.5rem 2rem;
+    
+    }
+    .glass .rightglass h2{
+        font-size: 2em;
+        padding: .2rem;
+        font-family: "Josefin Sans", sans-serif; 
+        font-weight: 300;
+        width: 100%;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: hsl(0, 0%, 41%);
+    }
+    .glass .rightglass p{
+        color: hsl(0, 0%, 55%);
+        padding: .3rem;
+    }
+    .glass{
+        margin-left: 1rem;
+    }
+
+}
+@media (max-width:1180px) {
+    body{
+        
+    }
+    .leftglass{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .glass .rightglass{
+        align-self:center;
+        background-color: white;
+    margin-left: -9.3rem;
+    margin-top: 9rem;
+    padding: 6.5rem 2rem;
+    
+    }
+    .glass .rightglass h2{
+        font-size: 1em;
+        padding: .2rem;
+        font-family: "Josefin Sans", sans-serif; 
+        font-weight: 300;
+        width: 100%;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: hsl(0, 0%, 41%);
+    }
+    .glass .rightglass p{
+        color: hsl(0, 0%, 55%);
+        padding: 10px;
+        width: 100%;
+    }
+    
+}
+@media(max-width:1100px){
+    footer.footer{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+        margin-top: 3rem;
+    
+    }
+    
+    
+    footer.footer   .leftfooter{
+        display: flex;
+        flex-direction: column;
+    margin-left: 5rem;
+    }
+    footer.footer   .leftfooter ul{
+        list-style: none;
+        display: flex;
+        margin-top: 2rem;
+    
+        gap: 3rem;
+    }
+    footer.footer   .rightfooter{
+        display: flex;
+        flex-direction: column;
+        margin-left: 3rem;
+    }
+    footer.footer   .rightfooter .topfoot{
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        font-size: 24px;
+        display: flex;
+    }
+    footer.footer   .rightfooter .topfoot i{
+        padding-left:10px ;
+    }
+
+
+
+
+
+
+.glass{
+    display: flex;
+    flex-direction: column;
+}
+
+
+    .glass .rightglass{
+        align-self:center;
+        background-color: white;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 6.5rem 2rem;
+    width: 100%;
+    text-align: center;
+    
+    }
+    .glass .rightglass h2{
+        font-size: 2rem;
+        padding: 0;
+        margin: 0 auto;
+        font-family: "Josefin Sans", sans-serif; 
+        font-weight: 300;
+        width: 40%;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: hsl(0, 0%, 41%);
+    }
+    .glass .rightglass p{
+        color: hsl(0, 0%, 55%);
+        padding: 10px;
+        width: 100%;
+    }
+}
+/* media for smal devices */
+@media(max-width:768px){
+    footer.footer{
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+        margin-top: 3rem;
+    
+    } nav ul li:hover{
+        transform: scale(1.1);
+      }
+    
+    
+    footer.footer   .leftfooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    margin-left: 5rem;
+    }
+    footer.footer   .leftfooter ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    
+        gap: 3rem;
+    }
+    footer.footer   .rightfooter{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3rem;
+    }
+    footer.footer   .rightfooter .topfoot{
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        font-size: 24px;
+        display: flex;
+    }
+    footer.footer   .rightfooter .topfoot i{
+        padding-left:10px ;
+    }
+
+
+
+
+
+
+
+
+nav{
+    align-items: center;
+}
+.logo{
+    align-items: center;
+    margin-top: 1rem;
+    margin-right: 5rem;
+    margin-left: -4rem;
+}
+.container{
+    padding: 0;
+    margin: 0;
+}
+    label{
+        display: block;
+      }
+      /* input{
+        display: none;
+      } */
+      i{
+        display: block;
+        z-index: 4;
+        color: white;
+      }
+input,label{
+    position: absolute;
+    top: 3.5rem;
+    right: 3rem;
+z-index: 2;
+}
+.hero{
+    margin-bottom: 1rem;
+    width: 100%;
+  
+}
+
+input{
+    display: none;
+}
+.hide{display: none;}
+.navwrap ul.hide{
+    display: none;
+}
+ #check:checked + label + .hide  {
+    display: flex;
+    flex-direction: column;
+z-index: 1;
+transition: all 1s  ease-in-out;
+
+}
+
+#check:checked ~   label.lab {
+  display: none;
+  }
+.hide{
+    position: absolute;
+    top: 0;
+    left: 0;
+height: 100vh;
+width: 100vw;
+
+    color: white;
+    padding: 20px 0;
+    z-index:3;
+    width: 200px;
+    height: 100vh;
+    right: 20px;
+    border: 2px solid white;
+   }
+    .hide  li{
+padding: 1rem;
+margin-left: 3rem;
+   }
+   .navwrap{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+   }
+   .hide ul{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+   }
+   .hide{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+   }
+   .hide .xxx{
+    display: block;
+}
+
+/* end of nav */
+.extracontent{
+    font-family: "Josefin Sans", sans-serif; 
+font-weight: 300;
+color: white;
+border: 2px solid white ;
+padding: 6rem 7rem;
+width: calc(100% - 1.5rem);
+margin: 0 1rem;
+position: relative;
+transform: translateX(-50%);
+transform: translateY(-250%);
+
+}
+.extracontent h1{
+    position: absolute;
+    top: 20%;
+    left: 10px;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+.glass .rightglass{
+    align-self:center;
+    background-color: white;
+margin-left: 0;
+margin-top: 0;
+padding: 3rem 2rem;
+width: 100%;
+text-align: center;
+
+}
+/* .container{
+    margin: 0;
+    padding: 0;
+} */
+.glass .rightglass h2{
+    font-size: 2rem;
+    padding: 0;
+    margin: 0 auto;
+    font-family: "Josefin Sans", sans-serif; 
+    font-weight: 300;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: hsl(0, 0%, 41%);
+}
+.glass .rightglass p{
+    color: hsl(0, 0%, 55%);
+    padding: 1rem;
+    width: 100%;
+}
+.glass{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+.leftglass{
+   
+    width: max-content;
+    margin: 0;
+    padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+
+}
+.leftglass img{
+    
+    object-fit: cover;
+  margin: 0;
+  padding: 0;
+
+}
+.glass{
+    padding-left: 0;
+    display: flex;
+    margin-bottom: 3rem;
+    padding: 1rem 1rem;
+    justify-content: center;
+    margin: 0 auto;
+}
+ button{
+    display: none;
+}
+
+/* .container{
+    padding: 1rem;
+    overflow-x: hidden;
+} */
+/* picture{
+    width: 100%;
+    max-width: 100%;
+
+} */
+.glass .leftglass{
+    padding:0;
+    max-width: 100%;
+    margin: 0 auto;
+   }
+.creations{
+    margin: 0rem;
+    padding: 0rem 0rem;
+   
+}
+   .cards{
+    display: flex;
+    flex-direction: column;
+ margin: 0;
+ padding: 0;   
+max-width: 100%;
+    gap: 1rem;
+  
+    flex-wrap: wrap;
+    } 
+    .card h3{
+        width: 100%;
+        margin-left: 2rem;
+    }
+    .creations{
+        margin-left: 0rem;
+        margin-bottom: 2rem;
+    }
+
+section.creations{
+    
+    margin-right: 1rem;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.wrap{
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.glass .leftglass{
+padding: 1rem;
+overflow: hidden;
+
+   }
+   .glass .leftglass picture img{
+    max-width: 100%;
+   }
+
+  .creations h2{
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+button.hide1{
+    display: block;
+    overflow: hidden;
+    padding: 20px 78px;
+    color: white;
+    border: none;
+    background-color: black;
+    margin: 0 auto;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-top: 1rem;
+
+}
+}
